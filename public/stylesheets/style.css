@@ -1,0 +1,17 @@
+.container {
+  margin-top: 100px;
+  width: 100vw;
+  height: 100vh;
+}
+.form-group,
+.alert {
+  width: 300px;
+  height: 60px;
+}
+input {
+  height: 50px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
