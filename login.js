@@ -26,11 +26,8 @@ const users = [
   }
 ];
 function login(email, password) {
-  console.log(email, password);
-
   for (let i = 0; i < users.length; i++) {
     if (users[i].email === email) {
-      console.log("1st");
       if (users[i].password === password) {
         return users[i].firstName;
       }
