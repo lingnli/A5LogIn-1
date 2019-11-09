@@ -1,7 +1,7 @@
 # Easy Login「簡易版登入」
 
 - Alphacamp class 3 project:A5
-- 使用 Node.js 及 Express 框架打造出的小網頁，包含 body-parser 應用
+- 使用 Node.js 及 Express 框架打造出的小網頁
 
 ## Environment Introduction 適用環境介紹
 
@@ -46,4 +46,5 @@ $ npm run dev
 ## Features 專案功能
 
 - 復仇者專用登入系統，目前共有五比種子資料
-- 輸入正確的 email 及密碼後，可以導入個人 welcome 頁面
+- 輸入已定的 email 及密碼後，可以導入個人 welcome 頁面
+- 登入後在一小時內不必重新輸入帳號密碼，即可以直接連接登入完成頁面
