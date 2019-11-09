@@ -18,7 +18,7 @@ app.use(
     rolling: true, //强制在每个响应中重设cookie的过期时间，并重新开始计时
     saveUninitialized: true, //初始化session
     cookie: {
-      maxAge: 60 * 1000 //session暫存在網頁的有效時間
+      maxAge: 60 * 60 //session暫存在網頁的有效時間 60秒Ｘ60
     }
   })
 );
@@ -35,6 +35,7 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   if (req.session.output) {
+    //連接首頁時，若在session中有找到資料，會直接導入登入畫面
     console.log(req.session.output);
     res.render("login", { output: req.session.output });
   } else {
